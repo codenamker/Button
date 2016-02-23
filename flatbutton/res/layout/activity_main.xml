@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.flatbutton.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.example.flatbutton.TButton
+            android:id="@+id/f_twitter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/twitter"
+            android:drawablePadding="0dp"
+            android:minHeight="80dp"
+            android:minWidth="250dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="20dp"
+            android:paddingTop="-5dp"
+            android:text="Twitter"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/shadow_height_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Shadow height: " />
+
+        <TextView
+            android:id="@+id/shadow_height_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="4dp" />
+
+        <SeekBar
+            android:id="@+id/shadow_height_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:max="10"
+            android:progress="4" />
+
+        <ToggleButton
+            android:id="@+id/enable_shadow_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="true"
+            android:minHeight="55dp"
+            android:text="Shadow" />
+    </LinearLayout>
+
+</ScrollView>
